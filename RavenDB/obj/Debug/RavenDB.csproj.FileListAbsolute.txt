@@ -1,0 +1,8 @@
+C:\Users\Damian\source\repos\RavenDB\RavenDB\bin\Debug\RavenDB.exe.config
+C:\Users\Damian\source\repos\RavenDB\RavenDB\bin\Debug\RavenDB.exe
+C:\Users\Damian\source\repos\RavenDB\RavenDB\bin\Debug\RavenDB.pdb
+C:\Users\Damian\source\repos\RavenDB\RavenDB\obj\Debug\RavenDB.Properties.Resources.resources
+C:\Users\Damian\source\repos\RavenDB\RavenDB\obj\Debug\RavenDB.csproj.GenerateResource.cache
+C:\Users\Damian\source\repos\RavenDB\RavenDB\obj\Debug\RavenDB.csproj.CoreCompileInputs.cache
+C:\Users\Damian\source\repos\RavenDB\RavenDB\obj\Debug\RavenDB.exe
+C:\Users\Damian\source\repos\RavenDB\RavenDB\obj\Debug\RavenDB.pdb
