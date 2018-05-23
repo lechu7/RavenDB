@@ -6,3 +6,13 @@ C:\Users\Damian\source\repos\RavenDB\RavenDB\obj\Debug\RavenDB.csproj.GenerateRe
 C:\Users\Damian\source\repos\RavenDB\RavenDB\obj\Debug\RavenDB.csproj.CoreCompileInputs.cache
 C:\Users\Damian\source\repos\RavenDB\RavenDB\obj\Debug\RavenDB.exe
 C:\Users\Damian\source\repos\RavenDB\RavenDB\obj\Debug\RavenDB.pdb
+D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.csprojResolveAssemblyReference.cache
+D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.Form1.resources
+D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.Properties.Resources.resources
+D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.csproj.GenerateResource.cache
+D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.csproj.CoreCompileInputs.cache
+D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.exe
+D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.pdb
+D:\GitHub\RavenDB\RavenDB\bin\Debug\RavenDB.exe.config
+D:\GitHub\RavenDB\RavenDB\bin\Debug\RavenDB.exe
+D:\GitHub\RavenDB\RavenDB\bin\Debug\RavenDB.pdb
