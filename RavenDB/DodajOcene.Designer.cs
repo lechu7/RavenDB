@@ -43,7 +43,7 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBox1.Location = new System.Drawing.Point(37, 114);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(261, 28);
+            this.comboBox1.Size = new System.Drawing.Size(338, 28);
             this.comboBox1.Sorted = true;
             this.comboBox1.TabIndex = 0;
             // 
