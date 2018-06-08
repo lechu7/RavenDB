@@ -78,6 +78,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DodajOcene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajOcene.Designer.cs">
+      <DependentUpon>DodajOcene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawaniePrzedmiot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawaniePrzedmiot.Designer.cs">
+      <DependentUpon>DodawaniePrzedmiot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawanieUczen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieUczen.Designer.cs">
+      <DependentUpon>DodawanieUczen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +105,15 @@
     <Compile Include="Librarycs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DodajOcene.resx">
+      <DependentUpon>DodajOcene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodawaniePrzedmiot.resx">
+      <DependentUpon>DodawaniePrzedmiot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodawanieUczen.resx">
+      <DependentUpon>DodawanieUczen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

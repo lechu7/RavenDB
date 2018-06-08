@@ -8,6 +8,8 @@ namespace RavenDB
 {
     class Librarycs
     {
+        const String DATABASE = "RavenDBFirstSteps";
+        const String DATABASEURL = "http://localhost:8080";
         public class Student
         {
             public String Id { get; set; }
@@ -47,7 +49,7 @@ namespace RavenDB
         Przedmiot przedmiot = new Przedmiot { NazwaPrzedmiotu = "Programowanie", ImieProwadzącego = "Wojciech", NazwiskoProwadzącego = "Waleński" };
         Oceny ocena = new Oceny { Imie = "Adam", Nazwisko = "Adamiak", NazwaPrzedmiotu = "Programowanie", ImieProwadzącego = "Wojciech", NazwiskoProwadzącego = "Waleński" , Ocena=3};
 
-        static void ZapiszStudent(Student student)
+        public static void ZapiszStudent(Student student)
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -58,7 +60,7 @@ namespace RavenDB
                 }
             }
         }
-        static void ZapiszPrzedmiot(Przedmiot przedmiot)
+        public static void ZapiszPrzedmiot(Przedmiot przedmiot)
         {
 
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
@@ -70,7 +72,7 @@ namespace RavenDB
                 }
             }
         }
-        static void ZapiszOceny(Oceny ocena)
+        public static void ZapiszOceny(Oceny ocena)
         {
 
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
@@ -83,7 +85,7 @@ namespace RavenDB
             }
         }
 
-        static Student WczytajStudent(String id)
+        public static Student WczytajStudent(String id)
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -93,7 +95,7 @@ namespace RavenDB
                 }
             }
         }
-        static Przedmiot WczytajPrzedmiot(String id)
+        public static Przedmiot WczytajPrzedmiot(String id)
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -103,7 +105,7 @@ namespace RavenDB
                 }
             }
         }
-        static Oceny WczytajOceny(String id)
+        public static Oceny WczytajOceny(String id)
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -113,7 +115,7 @@ namespace RavenDB
                 }
             }
         }
-        static void UsunStudent(String id)
+        public static void UsunStudent(String id)
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -125,7 +127,7 @@ namespace RavenDB
                 }
             }
         }
-        static void Usunrzedmiot(String id)
+        public static void UsunPrzedmiot(String id)
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -137,7 +139,7 @@ namespace RavenDB
                 }
             }
         }
-        static void UsunOceny(String id)
+        public static void UsunOceny(String id)
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -150,7 +152,7 @@ namespace RavenDB
             }
         }
 
-        static List<Student> ListaStudent()
+        public static List<Student> ListaStudent()
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -163,7 +165,7 @@ namespace RavenDB
                 }
             }
         }
-        static List<Przedmiot> ListaPrzedmiot()
+        public static List<Przedmiot> ListaPrzedmiot()
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -176,7 +178,7 @@ namespace RavenDB
                 }
             }
         }
-        static List<Oceny> ListaOceny()
+        public static List<Oceny> ListaOceny()
         {
             using (var ds = new Raven.Client.Document.DocumentStore { Url = DATABASEURL }.Initialize())
             {
@@ -189,8 +191,7 @@ namespace RavenDB
                 }
             }
         }
-        const String DATABASE = "RavenDBFirstSteps";
-        const String DATABASEURL = "http://localhost:8080";
+
 
     }
 
