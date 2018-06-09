@@ -27,19 +27,19 @@ namespace RavenDB
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            if (button1.Text=="Edytuj")
-            {
-               Librarycs.Oceny tmp= Librarycs.WczytajOceny(ID);
-               textBox1.Text = tmp.Ocena.ToString();
-            }
+   
 
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Librarycs.Oceny tmp= new Librarycs.Oceny(); ;
                 if (textBox1.Text != "" && comboBox1.Text != "" && comboBox2.Text != "")
                 {
-                    Librarycs.Oceny tmp = new Librarycs.Oceny();
+                if (button1.Text == "Edytuj")
+                {
+                    tmp = Librarycs.WczytajOceny(ID);
+
+                }
                     try
                     {
                         tmp.Ocena = Convert.ToInt32(textBox1.Text);
@@ -53,6 +53,7 @@ namespace RavenDB
                         tmp.NazwaPrzedmiotu = tmpListPrzedmiot[comboBox1.SelectedIndex].NazwaPrzedmiotu;
                         tmp.ImieProwadzącego = tmpListPrzedmiot[comboBox1.SelectedIndex].ImieProwadzącego;
                         tmp.NazwiskoProwadzącego = tmpListPrzedmiot[comboBox1.SelectedIndex].NazwiskoProwadzącego;
+
                         Librarycs.ZapiszOceny(tmp);
 
                         f.uzupelnianieListyOceny();
@@ -65,8 +66,8 @@ namespace RavenDB
 
                         MessageBox.Show("Źle wpisana ocena!");
                     }
-
                 }
+
                 else
                 {
                     MessageBox.Show("Podaj wszystkie potrzebne dane!");

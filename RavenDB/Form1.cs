@@ -209,8 +209,8 @@ namespace RavenDB
                     DialogResult dialogResult = MessageBox.Show("Czy chcesz usunąć ocenę " + dataGridView3.Rows[e.RowIndex].Cells[4].Value.ToString()+" z przedmiotu " + dataGridView3.Rows[e.RowIndex].Cells[1].Value.ToString() +" ucznia " + dataGridView3.Rows[e.RowIndex].Cells[2].Value.ToString() +" " + dataGridView3.Rows[e.RowIndex].Cells[3].Value.ToString() + "?", "Potwierdzenie", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        Librarycs.UsunPrzedmiot(dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString());
-                        uzupelnianieListyPrzedmioty();
+                        Librarycs.UsunOceny(dataGridView3.Rows[e.RowIndex].Cells[0].Value.ToString());
+                        uzupelnianieListyOceny();
                     }
 
                 }
