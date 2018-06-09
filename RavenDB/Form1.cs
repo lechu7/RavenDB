@@ -251,5 +251,10 @@ namespace RavenDB
                 dataGridView3.Rows[i].Cells[8].Style.BackColor = Color.Red;
             }
         }
+
+        private void dataGridView3_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

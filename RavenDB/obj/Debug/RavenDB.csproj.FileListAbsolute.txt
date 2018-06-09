@@ -255,3 +255,6 @@ D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.csproj.CopyComplete
 D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.DodawanieUczen.resources
 D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.DodawaniePrzedmiot.resources
 D:\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.DodajOcene.resources
+C:\Users\VOBIS\Documents\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.DodajOcene.resources
+C:\Users\VOBIS\Documents\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.DodawaniePrzedmiot.resources
+C:\Users\VOBIS\Documents\GitHub\RavenDB\RavenDB\obj\Debug\RavenDB.DodawanieUczen.resources

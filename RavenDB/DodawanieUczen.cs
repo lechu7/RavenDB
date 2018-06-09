@@ -20,21 +20,25 @@ namespace RavenDB
             InitializeComponent();
 
 
-            if (button1.Text == "Edytuj")
-            {
-                Librarycs.Student tmp = Librarycs.WczytajStudent(ID);
-                textBox1.Text = tmp.Imie.ToString();
-                textBox2.Text = tmp.Nazwisko.ToString();
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text!="" && textBox2.Text!="")
             {
-                Librarycs.Student tmp = new Librarycs.Student();
-                tmp.Imie = textBox1.Text;
-                tmp.Nazwisko = textBox2.Text;
+                Librarycs.Student tmp;
+                if (button1.Text == "Edytuj")
+                {
+                     tmp = Librarycs.WczytajStudent(ID);
+                    tmp.Imie = textBox1.Text;
+                    tmp.Nazwisko = textBox2.Text;
+                }
+                else
+                {
+                    tmp = new Librarycs.Student();
+                    tmp.Imie = textBox1.Text;
+                    tmp.Nazwisko = textBox2.Text;
+                }
                 Librarycs.ZapiszStudent(tmp);
 
                 this.Hide();
