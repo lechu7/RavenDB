@@ -12,10 +12,20 @@ namespace RavenDB
 {
     public partial class DodawanieUczen : Form
     {
-        Form1 f = new Form1();//Form1.getInstance();
+        Form1 f = new Form1();
+        public string ID = "";
+
         public DodawanieUczen()
         {
             InitializeComponent();
+
+
+            if (button1.Text == "Edytuj")
+            {
+                Librarycs.Student tmp = Librarycs.WczytajStudent(ID);
+                textBox1.Text = tmp.Imie.ToString();
+                textBox2.Text = tmp.Nazwisko.ToString();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

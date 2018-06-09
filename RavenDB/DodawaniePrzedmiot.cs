@@ -12,11 +12,19 @@ namespace RavenDB
 {
     public partial class DodawaniePrzedmiot : Form
     {
+        Form1 f = new Form1();
+        public string ID = "";
+
         public DodawaniePrzedmiot()
         {
             InitializeComponent();
+            if (button1.Text == "Edytuj")
+            {
+                Librarycs.Student tmp = Librarycs.WczytajStudent(ID);
+                textBox1.Text = tmp.Imie.ToString();
+                textBox2.Text = tmp.Nazwisko.ToString();
+            }
         }
-        Form1 f = new Form1(); //= Form1.getInstance();
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "" && textBox2.Text != ""&&textBox3.Text!="")

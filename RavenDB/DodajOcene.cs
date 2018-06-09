@@ -16,6 +16,7 @@ namespace RavenDB
 
         List<Librarycs.Student> tmpListStudent = new List<Librarycs.Student>();
         List<Librarycs.Przedmiot> tmpListPrzedmiot = new List<Librarycs.Przedmiot>();
+        public string ID="";
 
         public DodajOcene()
         {
@@ -26,44 +27,51 @@ namespace RavenDB
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
 
+            if (button1.Text=="Edytuj")
+            {
+               Librarycs.Oceny tmp= Librarycs.WczytajOceny(ID);
+               textBox1.Text = tmp.Ocena.ToString();
+            }
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && comboBox1.Text != "" && comboBox2.Text != "")
-            { 
-                Librarycs.Oceny tmp = new Librarycs.Oceny();
-                try
+
+                if (textBox1.Text != "" && comboBox1.Text != "" && comboBox2.Text != "")
                 {
-                    tmp.Ocena = Convert.ToInt32(textBox1.Text);
-                    if (tmp.Ocena<1 || tmp.Ocena>6)
+                    Librarycs.Oceny tmp = new Librarycs.Oceny();
+                    try
                     {
-                        throw new Exception();
+                        tmp.Ocena = Convert.ToInt32(textBox1.Text);
+                        if (tmp.Ocena < 1 || tmp.Ocena > 6)
+                        {
+                            throw new Exception();
+                        }
+                        tmp.Imie = tmpListStudent[comboBox2.SelectedIndex].Imie;
+                        tmp.Nazwisko = tmpListStudent[comboBox2.SelectedIndex].Nazwisko;
+
+                        tmp.NazwaPrzedmiotu = tmpListPrzedmiot[comboBox1.SelectedIndex].NazwaPrzedmiotu;
+                        tmp.ImieProwadzącego = tmpListPrzedmiot[comboBox1.SelectedIndex].ImieProwadzącego;
+                        tmp.NazwiskoProwadzącego = tmpListPrzedmiot[comboBox1.SelectedIndex].NazwiskoProwadzącego;
+                        Librarycs.ZapiszOceny(tmp);
+
+                        f.uzupelnianieListyOceny();
+                        this.Hide();
+                        f.tryb2();
+                        f.Show();
                     }
-                    tmp.Imie = tmpListStudent[comboBox2.SelectedIndex].Imie;
-                    tmp.Nazwisko = tmpListStudent[comboBox2.SelectedIndex].Nazwisko;
+                    catch (Exception)
+                    {
 
-                    tmp.NazwaPrzedmiotu= tmpListPrzedmiot[comboBox1.SelectedIndex].NazwaPrzedmiotu;
-                    tmp.ImieProwadzącego = tmpListPrzedmiot[comboBox1.SelectedIndex].ImieProwadzącego;
-                    tmp.NazwiskoProwadzącego = tmpListPrzedmiot[comboBox1.SelectedIndex].NazwiskoProwadzącego;
-                    Librarycs.ZapiszOceny(tmp);
+                        MessageBox.Show("Źle wpisana ocena!");
+                    }
 
-
-                    this.Hide();
-                    f.uzupelnianieListyOceny();
-                    f.tryb2();
-                    f.Show();
                 }
-                catch (Exception)
+                else
                 {
-
-                    MessageBox.Show("Źle wpisana ocena!");
+                    MessageBox.Show("Podaj wszystkie potrzebne dane!");
                 }
-
-            }
-            else
-            {
-                MessageBox.Show("Podaj wszystkie potrzebne dane!");
-            }
+        
         }
 
         private void button2_Click(object sender, EventArgs e)

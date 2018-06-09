@@ -13,6 +13,10 @@ namespace RavenDB
     
     public partial class Form1 : Form
     {
+        DodawanieUczen du;
+        DodawaniePrzedmiot dp;
+        DodajOcene doc;
+
         public int trybIndex = 0;
         public Form1()
         {
@@ -108,17 +112,17 @@ namespace RavenDB
             this.Hide();
             if (trybIndex==0)
             {
-                DodawanieUczen du = new DodawanieUczen();
+                du = new DodawanieUczen();
                 du.Show();
             }
             if (trybIndex == 1)
             {
-                DodawaniePrzedmiot dp = new DodawaniePrzedmiot();
+                dp = new DodawaniePrzedmiot();
                 dp.Show();
             }
             if (trybIndex == 2)
             {
-                DodajOcene doc = new DodajOcene();
+                doc = new DodajOcene();
                 doc.Show();
             }
         }
@@ -131,7 +135,14 @@ namespace RavenDB
             {
                 if (e.ColumnIndex ==3)
                 {
-
+                    du = new DodawanieUczen();
+                    du.button1.Text = "Edytuj";
+                    du.Text = "Edytuj ucznia";
+                    du.textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    du.textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    du.ID= dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    du.Show();
+                    this.Hide();
                 }
                 if (e.ColumnIndex == 4)
                 {
@@ -154,7 +165,15 @@ namespace RavenDB
             {
                 if (e.ColumnIndex == 4)
                 {
-
+                    dp = new DodawaniePrzedmiot();
+                    dp.button1.Text = "Edytuj";
+                    dp.Text = "Edytuj Przedmiot";
+                    dp.textBox1.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    dp.textBox2.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    dp.textBox3.Text = dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    dp.ID= dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    dp.Show();
+                    this.Hide();
                 }
                 if (e.ColumnIndex == 5)
                 {
@@ -177,7 +196,13 @@ namespace RavenDB
             {
                 if (e.ColumnIndex == 7)
                 {
-
+                    doc = new DodajOcene();
+                    doc.button1.Text = "Edytuj";
+                    doc.Text = "Edytuj Ocenę";
+                    doc.textBox1.Text = dataGridView3.Rows[e.RowIndex].Cells[4].Value.ToString();
+                    doc.ID = dataGridView3.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    doc.Show();
+                    this.Hide();
                 }
                 if (e.ColumnIndex == 8)
                 {
