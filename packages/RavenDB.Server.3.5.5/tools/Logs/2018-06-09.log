@@ -33535,3 +33535,541 @@ Last DB Etag=6BDECE3E-A5E1-F0CA-4971-D4B41957D780
 	Index: Raven/DocumentsByEntityName
 	Results: 6 returned out of 6 total.
 	Timing:";
+2018-06-09 13:00:41.9886;Raven.Database.DocumentDatabase;Debug;<system>;1;Start loading the following database: <system>;
+2018-06-09 13:00:42.6917;Raven.Database.Impl.DocumentCacher;Info;<system>;1;"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3160408064
+  PollingInterval     = 00:02:00";
+2018-06-09 13:00:42.7073;Raven.Database.Storage.Esent.StorageConfigurator;Info;<system>;1;"Esent Settings:
+  MaxVerPages      = 8192
+  CacheSizeMax     = 262144
+  DatabasePageSize = 4096";
+2018-06-09 13:00:42.7073;Raven.Storage.Esent.TransactionalStorage;Info;<system>;1;"Esent Settings:
+  MaxVerPages      = 8192
+  CacheSizeMax     = 262144
+  DatabasePageSize = 4096";
+2018-06-09 13:00:44.7229;Raven.Database.Storage.IndexDefinitionStorage;Debug;<system>;1;Reading index definitions from disk...;
+2018-06-09 13:00:44.7229;Raven.Database.Storage.IndexDefinitionStorage;Debug;<system>;1;Read 0 index definitions;
+2018-06-09 13:00:44.7229;Raven.Database.Storage.IndexDefinitionStorage;Debug;<system>;1;Reading transformer definitions from disk...;
+2018-06-09 13:00:44.7229;Raven.Database.Storage.IndexDefinitionStorage;Debug;<system>;1;Read 0 transform definitions;
+2018-06-09 13:00:44.7854;Raven.Database.Indexing.IndexStorage;Debug;<system>;1;Start opening indexes. There are 0 indexes that need to be loaded;
+2018-06-09 13:00:44.7854;Raven.Database.Indexing.IndexStorage;Debug;<system>;1;Index storage initialized. All indexes have been opened.;
+2018-06-09 13:00:44.8635;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;<system>;1;Document with key 'Raven/Backup/Status' was not found;
+2018-06-09 13:00:44.8948;Raven.Database.Actions.LastCollectionEtags;Debug;<system>;1;Starting to initialize last collection etags based on indexes ...;
+2018-06-09 13:00:44.8948;Raven.Database.DocumentDatabase;Debug;<system>;1;Finish loading the following database: <system>;
+2018-06-09 13:00:44.9104;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;;1;Document with key 'Raven/Authorization/WindowsSettings' was not found;
+2018-06-09 13:00:44.9260;Raven.Database.Indexing.WorkContext;Debug;;23;No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work;
+2018-06-09 13:00:44.9260;Raven.Database.Indexing.IndexingExecuter;Debug;;22;No tasks to execute were found!;
+2018-06-09 13:00:44.9260;Raven.Database.Indexing.IndexingExecuter;Debug;;22;Executed 0 tasks, processed documents: 0, took 18ms;
+2018-06-09 13:00:44.9260;Raven.Database.Indexing.WorkContext;Debug;;22;No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work;
+2018-06-09 13:00:45.3479;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;;1;Document with key 'Raven/Cluster/Configuration' was not found;
+2018-06-09 13:00:46.3166;Raven.Client.Connection.Async.AsyncServerClient;Warn;;10;Was unable to fetch topology from primary node http://localhost also there is no cached topology;
+2018-06-09 13:00:55.2695;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;;10;Document with key 'Raven/Databases/RavenDBFirstSteps' was found, etag: 01000000-0000-0001-0000-000000000003;
+2018-06-09 13:00:55.3632;Raven.Database.DocumentDatabase;Debug;RavenDBFirstSteps;9;Start loading the following database: RavenDBFirstSteps;
+2018-06-09 13:00:55.3788;Raven.Database.Impl.DocumentCacher;Info;RavenDBFirstSteps;9;"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3160408064
+  PollingInterval     = 00:02:00";
+2018-06-09 13:00:55.3788;Raven.Database.Storage.Esent.StorageConfigurator;Info;RavenDBFirstSteps;9;"Esent Settings:
+  MaxVerPages      = 8192
+  CacheSizeMax     = 262144
+  DatabasePageSize = 4096";
+2018-06-09 13:00:55.3788;Raven.Storage.Esent.TransactionalStorage;Info;RavenDBFirstSteps;9;"Esent Settings:
+  MaxVerPages      = 8192
+  CacheSizeMax     = 262144
+  DatabasePageSize = 4096";
+2018-06-09 13:00:55.3163;Raven.Database.Server.WebApi.RequestManager;Debug;;26;Receive Request #   1: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:00:55.6601;Raven.Database.Config.SystemInfoLoggin;Debug;;11;"Version: 35247 / 12375b3d5e
+Total Mem: 8 077MB, Available: 3 366MB, Mem limit: MB, Low mem: False
+DebugInfo for Database '' :
+= = = = = = = = = = = = = = = = 
+	Metrics:: DocsWritesPerSecond: 0,000, IndexedPerSecond: 0,000, ReducedPerSecond: 0,000, RequestsPerSecond: 0,000
+	Metrics.Requests:: Count: , OneMinuteRate: 0,000, MeanRate: 0,000
+	Metrics.RequestsDuration:: Counter: , Max: 0,000, Min: 0,000, Mean: 0,000, Stdev: 0,000
+	Metrics.StaleIndexMaps:: Counter: 1, Max: 0,000, Min: 0,000, Mean: 0,000, Stdev: 0,000
+	Metrics.StaleIndexMaps:: Counter: 1, Max: 0,000, Min: 0,000, Mean: 0,000, Stdev: 0,000
+Last DB Etag=F34B0395-5FCA-6A6E-468C-4DFAE1D9DCB5
+";
+2018-06-09 13:00:57.6600;Raven.Database.Storage.IndexDefinitionStorage;Debug;RavenDBFirstSteps;9;Reading index definitions from disk...;
+2018-06-09 13:00:58.2381;Raven.Database.Linq.QueryParsingUtils;Debug;RavenDBFirstSteps;9;Definition for index Index_Raven_DocumentsByEntityName in database RavenDBFirstSteps was found in compiled cache on disk (at D:\GitHub\RavenDB\packages\RavenDB.Server.3.5.5\tools\CompiledIndexCache\) and loaded to assembly;
+2018-06-09 13:00:58.2381;Raven.Database.Storage.IndexDefinitionStorage;Info;RavenDBFirstSteps;9;"New index Raven/DocumentsByEntityName:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+public class Index_Raven_DocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_DocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+select new 
+{ 
+    Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""], 
+    LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""],
+    LastModifiedTicks = ((DateTime)doc[""""@metadata""""][""""Last-Modified""""]).Ticks 
+};"";
+		this.AddMapDefinition(docs => 
+			from doc in ((IEnumerable<dynamic>)docs)
+			select new {
+				Tag = doc[""@metadata""][""Raven-Entity-Name""],
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				LastModifiedTicks = ((DateTime)doc[""@metadata""][""Last-Modified""]).Ticks,
+				__document_id = doc.__document_id
+			});
+		this.AddField(""Tag"");
+		this.AddField(""LastModified"");
+		this.AddField(""LastModifiedTicks"");
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""Ticks"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""Ticks"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+public class Index_Raven_DocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_DocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+select new 
+{ 
+    Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""], 
+    LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""],
+    LastModifiedTicks = ((DateTime)doc[""""@metadata""""][""""Last-Modified""""]).Ticks 
+};"";
+		this.AddMapDefinition(docs => 
+			from doc in ((IEnumerable<dynamic>)docs)
+			select new {
+				Tag = doc[""@metadata""][""Raven-Entity-Name""],
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				LastModifiedTicks = ((DateTime)doc[""@metadata""][""Last-Modified""]).Ticks,
+				__document_id = doc.__document_id
+			});
+		this.AddField(""Tag"");
+		this.AddField(""LastModified"");
+		this.AddField(""LastModifiedTicks"");
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""Ticks"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""Ticks"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+";
+2018-06-09 13:00:58.2381;Raven.Database.Storage.IndexDefinitionStorage;Debug;RavenDBFirstSteps;9;Read 1 index definitions;
+2018-06-09 13:00:58.2381;Raven.Database.Storage.IndexDefinitionStorage;Debug;RavenDBFirstSteps;9;Reading transformer definitions from disk...;
+2018-06-09 13:00:58.2381;Raven.Database.Storage.IndexDefinitionStorage;Debug;RavenDBFirstSteps;9;Read 0 transform definitions;
+2018-06-09 13:00:58.2381;Raven.Database.Indexing.IndexStorage;Debug;RavenDBFirstSteps;9;Start opening indexes. There are 1 indexes that need to be loaded;
+2018-06-09 13:00:58.2381;Raven.Database.Indexing.IndexStorage.Startup;Debug;RavenDBFirstSteps;9;Loading saved index Raven/DocumentsByEntityName;
+2018-06-09 13:00:58.2694;Raven.Database.Indexing.Index.Indexing;Debug;RavenDBFirstSteps;9;Creating index for Raven/DocumentsByEntityName;
+2018-06-09 13:00:58.3944;Raven.Database.Indexing.IndexStorage.Startup;Debug;RavenDBFirstSteps;9;1/1 indexes loaded;
+2018-06-09 13:00:58.3944;Raven.Database.Indexing.IndexStorage;Debug;RavenDBFirstSteps;9;Index storage initialized. All indexes have been opened.;
+2018-06-09 13:00:58.3944;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;9;Document with key 'Raven/Backup/Status' was not found;
+2018-06-09 13:00:58.4100;Raven.Database.Actions.LastCollectionEtags;Debug;RavenDBFirstSteps;9;Starting to initialize last collection etags based on indexes ...;
+2018-06-09 13:00:58.4100;Raven.Database.DocumentDatabase;Debug;RavenDBFirstSteps;9;Finish loading the following database: RavenDBFirstSteps;
+2018-06-09 13:00:58.4100;Raven.Database.Indexing.WorkContext;Debug;;31;No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work;
+2018-06-09 13:00:58.4256;Raven.Database.Indexing.IndexingExecuter;Debug;;30;No tasks to execute were found!;
+2018-06-09 13:00:58.4256;Raven.Database.Indexing.IndexingExecuter;Debug;;30;Executed 0 tasks, processed documents: 0, took 0ms;
+2018-06-09 13:00:58.4256;Raven.Database.Indexing.WorkContext;Debug;;30;No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work;
+2018-06-09 13:00:58.8475;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;9;Issuing query on index Raven/DocumentsByEntityName for: Tag:Students;
+2018-06-09 13:00:58.9256;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;9;Document with key 'students/161' was found, etag: 01000000-0000-0007-0000-00000000000C;
+2018-06-09 13:00:58.9412;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;9;Document with key 'students/193' was found, etag: 01000000-0000-0007-0000-00000000000E;
+2018-06-09 13:00:58.9412;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;9;Document with key 'students/65' was found, etag: 01000000-0000-0008-0000-000000000001;
+2018-06-09 13:00:58.9412;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;9;Document with key 'students/129' was found, etag: 01000000-0000-0008-0000-000000000003;
+2018-06-09 13:00:58.9412;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;9;Document with key 'students/97' was found, etag: 01000000-0000-0008-0000-000000000009;
+2018-06-09 13:00:58.9412;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;9;Document with key 'students/257' was found, etag: 01000000-0000-0008-0000-00000000000D;
+2018-06-09 13:00:58.9412;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;9;"	Query: Tag:Students
+	Time: 280 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:00:58.9881;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;9;Request #   1: GET     - 3,668 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:00:58.9881;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;9;"	Query: Tag:Students
+	Time: 280 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:00:59.2693;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #   2: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:00:59.2693;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Przedmiots;
+2018-06-09 13:00:59.2693;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'przedmiots/161' was found, etag: 01000000-0000-0005-0000-000000000008;
+2018-06-09 13:00:59.2693;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'przedmiots/129' was found, etag: 01000000-0000-0008-0000-00000000001A;
+2018-06-09 13:00:59.2693;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:
+";
+2018-06-09 13:00:59.2693;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #   2: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:00:59.2693;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:";
+2018-06-09 13:00:59.2850;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #   3: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:00:59.2850;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Ocenies;
+2018-06-09 13:00:59.2850;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/129' was found, etag: 01000000-0000-0004-0000-000000000014;
+2018-06-09 13:00:59.2850;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/161' was found, etag: 01000000-0000-0005-0000-00000000000A;
+2018-06-09 13:00:59.2850;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/193' was found, etag: 01000000-0000-0007-0000-000000000002;
+2018-06-09 13:00:59.2850;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/225' was found, etag: 01000000-0000-0007-0000-000000000004;
+2018-06-09 13:00:59.2850;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/257' was found, etag: 01000000-0000-0007-0000-000000000006;
+2018-06-09 13:00:59.2850;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/289' was found, etag: 01000000-0000-0008-0000-000000000019;
+2018-06-09 13:00:59.2850;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:00:59.2850;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #   3: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:00:59.2850;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:00:59.3006;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #   4: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:00:59.3162;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Students;
+2018-06-09 13:00:59.3162;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/161' was found, etag: 01000000-0000-0007-0000-00000000000C;
+2018-06-09 13:00:59.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/193' was found, etag: 01000000-0000-0007-0000-00000000000E;
+2018-06-09 13:00:59.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/65' was found, etag: 01000000-0000-0008-0000-000000000001;
+2018-06-09 13:00:59.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/129' was found, etag: 01000000-0000-0008-0000-000000000003;
+2018-06-09 13:00:59.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/97' was found, etag: 01000000-0000-0008-0000-000000000009;
+2018-06-09 13:00:59.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/257' was found, etag: 01000000-0000-0008-0000-00000000000D;
+2018-06-09 13:00:59.3318;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Students
+	Time: 22 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:00:59.3318;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #   4: GET     -    23 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:00:59.3318;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Students
+	Time: 22 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:00:59.3475;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #   5: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:00:59.3475;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Students;
+2018-06-09 13:00:59.3475;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/161' was found, etag: 01000000-0000-0007-0000-00000000000C;
+2018-06-09 13:00:59.3475;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/193' was found, etag: 01000000-0000-0007-0000-00000000000E;
+2018-06-09 13:00:59.3475;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/65' was found, etag: 01000000-0000-0008-0000-000000000001;
+2018-06-09 13:00:59.3475;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/129' was found, etag: 01000000-0000-0008-0000-000000000003;
+2018-06-09 13:00:59.3475;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/97' was found, etag: 01000000-0000-0008-0000-000000000009;
+2018-06-09 13:00:59.3475;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/257' was found, etag: 01000000-0000-0008-0000-00000000000D;
+2018-06-09 13:00:59.3475;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Students
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:00:59.3475;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #   5: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:00:59.3475;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Students
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:00:59.3631;Raven.Database.Server.WebApi.RequestManager;Debug;;32;Receive Request #   6: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:00:59.3631;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;32;Issuing query on index Raven/DocumentsByEntityName for: Tag:Przedmiots;
+2018-06-09 13:00:59.3631;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'przedmiots/161' was found, etag: 01000000-0000-0005-0000-000000000008;
+2018-06-09 13:00:59.3631;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'przedmiots/129' was found, etag: 01000000-0000-0008-0000-00000000001A;
+2018-06-09 13:00:59.3631;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;32;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:
+";
+2018-06-09 13:00:59.3631;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;Request #   6: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:00:59.3631;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:";
+2018-06-09 13:00:59.3631;Raven.Database.Server.WebApi.RequestManager;Debug;;32;Receive Request #   7: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:00:59.3787;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;32;Issuing query on index Raven/DocumentsByEntityName for: Tag:Ocenies;
+2018-06-09 13:00:59.3787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/129' was found, etag: 01000000-0000-0004-0000-000000000014;
+2018-06-09 13:00:59.3787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/161' was found, etag: 01000000-0000-0005-0000-00000000000A;
+2018-06-09 13:00:59.3787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/193' was found, etag: 01000000-0000-0007-0000-000000000002;
+2018-06-09 13:00:59.3787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/225' was found, etag: 01000000-0000-0007-0000-000000000004;
+2018-06-09 13:00:59.3787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/257' was found, etag: 01000000-0000-0007-0000-000000000006;
+2018-06-09 13:00:59.3787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/289' was found, etag: 01000000-0000-0008-0000-000000000019;
+2018-06-09 13:00:59.3787;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;32;"	Query: Tag:Ocenies
+	Time: 2 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:00:59.3787;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;Request #   7: GET     -     3 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:00:59.3787;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;"	Query: Tag:Ocenies
+	Time: 2 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:00.8787;Raven.Database.Server.WebApi.RequestManager;Debug;;32;Receive Request #   8: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:00.8787;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;32;Issuing query on index Raven/DocumentsByEntityName for: Tag:Students;
+2018-06-09 13:01:00.8787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/161' was found, etag: 01000000-0000-0007-0000-00000000000C;
+2018-06-09 13:01:00.8787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/193' was found, etag: 01000000-0000-0007-0000-00000000000E;
+2018-06-09 13:01:00.8787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/65' was found, etag: 01000000-0000-0008-0000-000000000001;
+2018-06-09 13:01:00.8787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/129' was found, etag: 01000000-0000-0008-0000-000000000003;
+2018-06-09 13:01:00.8787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/97' was found, etag: 01000000-0000-0008-0000-000000000009;
+2018-06-09 13:01:00.8787;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/257' was found, etag: 01000000-0000-0008-0000-00000000000D;
+2018-06-09 13:01:00.8787;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;32;"	Query: Tag:Students
+	Time: 4 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:01:00.8787;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;Request #   8: GET     -     6 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:00.8787;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;"	Query: Tag:Students
+	Time: 4 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:00.9412;Raven.Database.Server.WebApi.RequestManager;Debug;;32;Receive Request #   9: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:01:00.9412;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;32;Issuing query on index Raven/DocumentsByEntityName for: Tag:Przedmiots;
+2018-06-09 13:01:00.9412;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'przedmiots/161' was found, etag: 01000000-0000-0005-0000-000000000008;
+2018-06-09 13:01:00.9412;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'przedmiots/129' was found, etag: 01000000-0000-0008-0000-00000000001A;
+2018-06-09 13:01:00.9412;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;32;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:
+";
+2018-06-09 13:01:00.9412;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;Request #   9: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:01:00.9412;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:";
+2018-06-09 13:01:00.9724;Raven.Database.Server.WebApi.RequestManager;Debug;;32;Receive Request #  10: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:01:00.9724;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;32;Issuing query on index Raven/DocumentsByEntityName for: Tag:Ocenies;
+2018-06-09 13:01:00.9724;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/129' was found, etag: 01000000-0000-0004-0000-000000000014;
+2018-06-09 13:01:00.9724;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/161' was found, etag: 01000000-0000-0005-0000-00000000000A;
+2018-06-09 13:01:00.9724;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/193' was found, etag: 01000000-0000-0007-0000-000000000002;
+2018-06-09 13:01:00.9724;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/225' was found, etag: 01000000-0000-0007-0000-000000000004;
+2018-06-09 13:01:00.9724;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/257' was found, etag: 01000000-0000-0007-0000-000000000006;
+2018-06-09 13:01:00.9724;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/289' was found, etag: 01000000-0000-0008-0000-000000000019;
+2018-06-09 13:01:00.9724;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;32;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:01:00.9724;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;Request #  10: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:01:00.9724;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:01.3318;Raven.Database.Server.WebApi.RequestManager;Debug;;32;Receive Request #  11: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:01.3318;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;32;Issuing query on index Raven/DocumentsByEntityName for: Tag:Students;
+2018-06-09 13:01:01.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/161' was found, etag: 01000000-0000-0007-0000-00000000000C;
+2018-06-09 13:01:01.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/193' was found, etag: 01000000-0000-0007-0000-00000000000E;
+2018-06-09 13:01:01.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/65' was found, etag: 01000000-0000-0008-0000-000000000001;
+2018-06-09 13:01:01.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/129' was found, etag: 01000000-0000-0008-0000-000000000003;
+2018-06-09 13:01:01.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/97' was found, etag: 01000000-0000-0008-0000-000000000009;
+2018-06-09 13:01:01.3318;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/257' was found, etag: 01000000-0000-0008-0000-00000000000D;
+2018-06-09 13:01:01.3318;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;32;"	Query: Tag:Students
+	Time: 2 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:01:01.3318;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;Request #  11: GET     -     4 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:01.3318;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;"	Query: Tag:Students
+	Time: 2 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:01.3474;Raven.Database.Server.WebApi.RequestManager;Debug;;32;Receive Request #  12: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:01:01.3474;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;32;Issuing query on index Raven/DocumentsByEntityName for: Tag:Przedmiots;
+2018-06-09 13:01:01.3474;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'przedmiots/161' was found, etag: 01000000-0000-0005-0000-000000000008;
+2018-06-09 13:01:01.3474;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'przedmiots/129' was found, etag: 01000000-0000-0008-0000-00000000001A;
+2018-06-09 13:01:01.3474;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;32;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:
+";
+2018-06-09 13:01:01.3474;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;Request #  12: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:01:01.3474;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:";
+2018-06-09 13:01:01.3630;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #  13: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:01:01.3630;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Ocenies;
+2018-06-09 13:01:01.3630;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/129' was found, etag: 01000000-0000-0004-0000-000000000014;
+2018-06-09 13:01:01.3630;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/161' was found, etag: 01000000-0000-0005-0000-00000000000A;
+2018-06-09 13:01:01.3630;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/193' was found, etag: 01000000-0000-0007-0000-000000000002;
+2018-06-09 13:01:01.3630;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/225' was found, etag: 01000000-0000-0007-0000-000000000004;
+2018-06-09 13:01:01.3630;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/257' was found, etag: 01000000-0000-0007-0000-000000000006;
+2018-06-09 13:01:01.3630;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/289' was found, etag: 01000000-0000-0008-0000-000000000019;
+2018-06-09 13:01:01.3630;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:01:01.3630;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #  13: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:01:01.3630;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:03.0349;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #  14: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:03.0349;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Students;
+2018-06-09 13:01:03.0349;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/161' was found, etag: 01000000-0000-0007-0000-00000000000C;
+2018-06-09 13:01:03.0349;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/193' was found, etag: 01000000-0000-0007-0000-00000000000E;
+2018-06-09 13:01:03.0349;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/65' was found, etag: 01000000-0000-0008-0000-000000000001;
+2018-06-09 13:01:03.0349;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/129' was found, etag: 01000000-0000-0008-0000-000000000003;
+2018-06-09 13:01:03.0349;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/97' was found, etag: 01000000-0000-0008-0000-000000000009;
+2018-06-09 13:01:03.0349;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/257' was found, etag: 01000000-0000-0008-0000-00000000000D;
+2018-06-09 13:01:03.0349;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Students
+	Time: 2 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:01:03.0349;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #  14: GET     -     4 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:03.0349;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Students
+	Time: 2 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:03.0505;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #  15: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:01:03.0505;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Przedmiots;
+2018-06-09 13:01:03.0505;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'przedmiots/161' was found, etag: 01000000-0000-0005-0000-000000000008;
+2018-06-09 13:01:03.0505;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'przedmiots/129' was found, etag: 01000000-0000-0008-0000-00000000001A;
+2018-06-09 13:01:03.0505;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:
+";
+2018-06-09 13:01:03.0505;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #  15: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:01:03.0505;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:";
+2018-06-09 13:01:03.0661;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #  16: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:01:03.0661;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Ocenies;
+2018-06-09 13:01:03.0661;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/129' was found, etag: 01000000-0000-0004-0000-000000000014;
+2018-06-09 13:01:03.0661;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/161' was found, etag: 01000000-0000-0005-0000-00000000000A;
+2018-06-09 13:01:03.0661;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/193' was found, etag: 01000000-0000-0007-0000-000000000002;
+2018-06-09 13:01:03.0661;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/225' was found, etag: 01000000-0000-0007-0000-000000000004;
+2018-06-09 13:01:03.0661;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/257' was found, etag: 01000000-0000-0007-0000-000000000006;
+2018-06-09 13:01:03.0661;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'ocenies/289' was found, etag: 01000000-0000-0008-0000-000000000019;
+2018-06-09 13:01:03.0661;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:01:03.0661;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #  16: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:01:03.0661;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:03.6598;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #  17: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:03.6755;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Students;
+2018-06-09 13:01:03.6755;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/161' was found, etag: 01000000-0000-0007-0000-00000000000C;
+2018-06-09 13:01:03.6755;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/193' was found, etag: 01000000-0000-0007-0000-00000000000E;
+2018-06-09 13:01:03.6755;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/65' was found, etag: 01000000-0000-0008-0000-000000000001;
+2018-06-09 13:01:03.6755;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/129' was found, etag: 01000000-0000-0008-0000-000000000003;
+2018-06-09 13:01:03.6755;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/97' was found, etag: 01000000-0000-0008-0000-000000000009;
+2018-06-09 13:01:03.6755;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'students/257' was found, etag: 01000000-0000-0008-0000-00000000000D;
+2018-06-09 13:01:03.6755;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Students
+	Time: 2 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:01:03.6755;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #  17: GET     -     3 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:03.6755;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Students
+	Time: 2 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:03.6911;Raven.Database.Server.WebApi.RequestManager;Debug;;32;Receive Request #  18: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:03.6911;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;32;Issuing query on index Raven/DocumentsByEntityName for: Tag:Students;
+2018-06-09 13:01:03.6911;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/161' was found, etag: 01000000-0000-0007-0000-00000000000C;
+2018-06-09 13:01:03.6911;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/193' was found, etag: 01000000-0000-0007-0000-00000000000E;
+2018-06-09 13:01:03.6911;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/65' was found, etag: 01000000-0000-0008-0000-000000000001;
+2018-06-09 13:01:03.6911;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/129' was found, etag: 01000000-0000-0008-0000-000000000003;
+2018-06-09 13:01:03.6911;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/97' was found, etag: 01000000-0000-0008-0000-000000000009;
+2018-06-09 13:01:03.6911;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'students/257' was found, etag: 01000000-0000-0008-0000-00000000000D;
+2018-06-09 13:01:03.6911;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;32;"	Query: Tag:Students
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:01:03.6911;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;Request #  18: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Students?&pageSize=128;
+2018-06-09 13:01:03.6911;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;"	Query: Tag:Students
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:03.7067;Raven.Database.Server.WebApi.RequestManager;Debug;;33;Receive Request #  19: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:01:03.7067;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;33;Issuing query on index Raven/DocumentsByEntityName for: Tag:Przedmiots;
+2018-06-09 13:01:03.7067;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'przedmiots/161' was found, etag: 01000000-0000-0005-0000-000000000008;
+2018-06-09 13:01:03.7067;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;33;Document with key 'przedmiots/129' was found, etag: 01000000-0000-0008-0000-00000000001A;
+2018-06-09 13:01:03.7067;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;33;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:
+";
+2018-06-09 13:01:03.7067;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;Request #  19: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Przedmiots?&pageSize=128;
+2018-06-09 13:01:03.7067;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;33;"	Query: Tag:Przedmiots
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+	Timing:";
+2018-06-09 13:01:03.7067;Raven.Database.Server.WebApi.RequestManager;Debug;;32;Receive Request #  20: GET     - RavenDBFirstSteps - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:01:03.7067;Raven.Database.Indexing.Index.Querying;Debug;RavenDBFirstSteps;32;Issuing query on index Raven/DocumentsByEntityName for: Tag:Ocenies;
+2018-06-09 13:01:03.7067;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/129' was found, etag: 01000000-0000-0004-0000-000000000014;
+2018-06-09 13:01:03.7067;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/161' was found, etag: 01000000-0000-0005-0000-00000000000A;
+2018-06-09 13:01:03.7223;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/193' was found, etag: 01000000-0000-0007-0000-000000000002;
+2018-06-09 13:01:03.7223;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/225' was found, etag: 01000000-0000-0007-0000-000000000004;
+2018-06-09 13:01:03.7223;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/257' was found, etag: 01000000-0000-0007-0000-000000000006;
+2018-06-09 13:01:03.7223;Raven.Database.Storage.Esent.StorageActions.DocumentStorageActions;Debug;RavenDBFirstSteps;32;Document with key 'ocenies/289' was found, etag: 01000000-0000-0008-0000-000000000019;
+2018-06-09 13:01:03.7223;Raven.Database.Server.Controllers.RavenBaseApiController;Debug;RavenDBFirstSteps;32;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:
+";
+2018-06-09 13:01:03.7223;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;Request #  20: GET     -     2 ms - RavenDBFirstSteps - 200 - http://localhost:8080/databases/RavenDBFirstSteps/indexes/dynamic/Ocenies?&pageSize=128;
+2018-06-09 13:01:03.7223;Raven.Database.Server.WebApi.RequestManager;Debug;RavenDBFirstSteps;32;"	Query: Tag:Ocenies
+	Time: 1 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 6 returned out of 6 total.
+	Timing:";
+2018-06-09 13:01:14.7845;Raven.Database.Impl.DTC.InFlightTransactionalState;Info;;29;Performing Transactions Cleanup Sequence for db <system>;
+2018-06-09 13:01:28.2440;Raven.Database.Impl.DTC.InFlightTransactionalState;Info;;28;Performing Transactions Cleanup Sequence for db RavenDBFirstSteps;
+2018-06-09 13:01:44.7904;Raven.Database.Impl.DTC.InFlightTransactionalState;Info;;28;Performing Transactions Cleanup Sequence for db <system>;
+2018-06-09 13:01:58.2588;Raven.Database.Impl.DTC.InFlightTransactionalState;Info;;29;Performing Transactions Cleanup Sequence for db RavenDBFirstSteps;
+2018-06-09 13:02:14.8046;Raven.Database.Impl.DTC.InFlightTransactionalState;Info;;28;Performing Transactions Cleanup Sequence for db <system>;

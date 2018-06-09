@@ -18,7 +18,7 @@ namespace RavenDB
         public DodawaniePrzedmiot()
         {
             InitializeComponent();
-  
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -27,6 +27,7 @@ namespace RavenDB
                 Librarycs.Przedmiot tmp;
                 if (button1.Text == "Edytuj")
                 {
+
                     tmp= Librarycs.WczytajPrzedmiot(ID);
                     tmp.ImieProwadzącego = textBox1.Text;
                     tmp.NazwiskoProwadzącego = textBox2.Text;
