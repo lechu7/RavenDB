@@ -122,6 +122,75 @@ namespace RavenDB
                 doc.Show();
             }
         }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                if (e.ColumnIndex ==3)
+                {
+
+                }
+                if (e.ColumnIndex == 4)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Czy chcesz usunąć "+ dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString() +" "+ dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString()+"?", "Potwierdzenie", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        Librarycs.UsunStudent(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                        uzupelnianieListyUczniowie();
+                    }
+                   
+                }
+            }
+        }
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                if (e.ColumnIndex == 4)
+                {
+
+                }
+                if (e.ColumnIndex == 5)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Czy chcesz usunąć " + dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString()+"?", "Potwierdzenie", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        Librarycs.UsunPrzedmiot(dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString());
+                        uzupelnianieListyPrzedmioty();
+                    }
+
+                }
+            }
+        }
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                if (e.ColumnIndex == 7)
+                {
+
+                }
+                if (e.ColumnIndex == 8)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Czy chcesz usunąć ocenę " + dataGridView3.Rows[e.RowIndex].Cells[4].Value.ToString()+" z przedmiotu " + dataGridView3.Rows[e.RowIndex].Cells[1].Value.ToString() +" ucznia " + dataGridView3.Rows[e.RowIndex].Cells[2].Value.ToString() +" " + dataGridView3.Rows[e.RowIndex].Cells[3].Value.ToString() + "?", "Potwierdzenie", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        Librarycs.UsunPrzedmiot(dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString());
+                        uzupelnianieListyPrzedmioty();
+                    }
+
+                }
+            }
+        }
 
 
         public void uzupelnianieListyUczniowie()

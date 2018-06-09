@@ -27,8 +27,9 @@ namespace RavenDB
                 tmp.NazwaPrzedmiotu = textBox3.Text;
                 Librarycs.ZapiszPrzedmiot(tmp);
 
-                f.uzupelnianieListyPrzedmioty();
+              
                 this.Hide();
+                f.uzupelnianieListyPrzedmioty();
                 f.tryb1();
                 f.Show();
             }

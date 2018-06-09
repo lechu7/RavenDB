@@ -27,8 +27,8 @@ namespace RavenDB
                 tmp.Nazwisko = textBox2.Text;
                 Librarycs.ZapiszStudent(tmp);
 
-                f.uzupelnianieListyUczniowie();
                 this.Hide();
+                f.uzupelnianieListyUczniowie();
                 f.tryb0();
                 f.Show();
             }

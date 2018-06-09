@@ -47,8 +47,9 @@ namespace RavenDB
                     tmp.NazwiskoProwadzącego = tmpListPrzedmiot[comboBox1.SelectedIndex].NazwiskoProwadzącego;
                     Librarycs.ZapiszOceny(tmp);
 
-                    f.uzupelnianieListyOceny();
+
                     this.Hide();
+                    f.uzupelnianieListyOceny();
                     f.tryb2();
                     f.Show();
                 }
