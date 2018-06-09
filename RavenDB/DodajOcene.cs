@@ -27,11 +27,6 @@ namespace RavenDB
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            if (button1.Text=="Edytuj")
-            {
-               Librarycs.Oceny tmp= Librarycs.WczytajOceny(ID);
-               textBox1.Text = tmp.Ocena.ToString();
-            }
 
         }
         private void button1_Click(object sender, EventArgs e)
@@ -41,13 +36,18 @@ namespace RavenDB
                 {
                     Librarycs.Oceny tmp = new Librarycs.Oceny();
                     try
+                {
+                    if (button1.Text == "Edytuj")
                     {
-                        tmp.Ocena = Convert.ToInt32(textBox1.Text);
+                        tmp = Librarycs.WczytajOceny(ID);
+                    }
+                    tmp.Ocena = Convert.ToInt32(textBox1.Text);
                         if (tmp.Ocena < 1 || tmp.Ocena > 6)
                         {
                             throw new Exception();
                         }
-                        tmp.Imie = tmpListStudent[comboBox2.SelectedIndex].Imie;
+
+                    tmp.Imie = tmpListStudent[comboBox2.SelectedIndex].Imie;
                         tmp.Nazwisko = tmpListStudent[comboBox2.SelectedIndex].Nazwisko;
 
                         tmp.NazwaPrzedmiotu = tmpListPrzedmiot[comboBox1.SelectedIndex].NazwaPrzedmiotu;
