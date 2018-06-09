@@ -18,21 +18,26 @@ namespace RavenDB
         public DodawaniePrzedmiot()
         {
             InitializeComponent();
-            if (button1.Text == "Edytuj")
-            {
-                Librarycs.Student tmp = Librarycs.WczytajStudent(ID);
-                textBox1.Text = tmp.Imie.ToString();
-                textBox2.Text = tmp.Nazwisko.ToString();
-            }
         }
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "" && textBox2.Text != ""&&textBox3.Text!="")
             {
-                Librarycs.Przedmiot tmp = new Librarycs.Przedmiot();
-                tmp.ImieProwadzącego = textBox1.Text;
-                tmp.NazwiskoProwadzącego = textBox2.Text;
-                tmp.NazwaPrzedmiotu = textBox3.Text;
+                Librarycs.Przedmiot tmp;
+                if (button1.Text == "Edytuj")
+                {
+                    tmp = Librarycs.WczytajPrzedmiot(ID);
+                    tmp.ImieProwadzącego = textBox1.Text;
+                    tmp.NazwiskoProwadzącego = textBox2.Text;
+                    tmp.NazwaPrzedmiotu = textBox3.Text;
+                }
+                else
+                {
+                    tmp = new Librarycs.Przedmiot();
+                    tmp.ImieProwadzącego = textBox1.Text;
+                    tmp.NazwiskoProwadzącego = textBox2.Text;
+                    tmp.NazwaPrzedmiotu = textBox3.Text;
+                }
                 Librarycs.ZapiszPrzedmiot(tmp);
 
               
